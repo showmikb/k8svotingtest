@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: voting-app
+  name: redis-app
   labels:
     name: redis-app-pod
 spec:
