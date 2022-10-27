@@ -8,3 +8,5 @@ spec:
   containers:
     - name: redispod
       image: redis
+      ports:
+        - containerPort: 6379
