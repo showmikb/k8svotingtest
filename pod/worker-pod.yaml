@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: worker-app
+  labels:
+    name: worker-app-pod
+spec:
+  ports:
+    - targetPort: 80
+      port: 80
+      nodePort: 30080
+  containers:
+    - name: workerpod
+      image: kodekloud/examplevotingapp_worker
